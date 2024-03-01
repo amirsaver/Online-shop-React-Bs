@@ -1,0 +1,79 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.img-Group > img.active{
+  opacity: 1!important;
+  border: 1px solid blue!important;
+  box-shadow: 0px 0px 5px 3px #b0b0a5;
+}
+
+.cart-badge {
+  transition: all 0.2s ease-in-out;
+}
+
+.cart-badge.added {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.cart-badge.removed {
+  transform: scale(0.8);
+  box-shadow: 0 0 10px rgba(219, 233, 24, 0.5);
+}
+
+.about-text{
+  width: fit-content;
+  text-indent: 10px;
+  margin: 1rem;
+  padding: 1.6rem; padding-top: .7rem;
+  text-align: justify;
+  display: block;
+  line-height: 1.6rem;
+
+}
+/* .expand {
+  transition: height 0.5s ease-out;
+}
+
+.collapse {
+  height: 30px !important;
+  transition: height 0.5s ease-out; 
+} */
